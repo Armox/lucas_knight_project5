@@ -6,9 +6,13 @@ import ResultsBox from './results_box';
 const Main = (props) => {
     let DisplayBox;
     if(props.phase < 2){
-        DisplayBox = <IntroBox countryList={props.countryList} setStateCuisine={props.setStateCuisine}/>
+        DisplayBox = <IntroBox 
+                        countryList={props.countryList}
+                        setStateCuisine={props.setStateCuisine}/>
     } else {
-        DisplayBox = <ResultsBox countryList={props.countryList} cuisineSelected={props.cuisineSelected}/>
+        DisplayBox = <ResultsBox 
+                        countryList={props.countryList} 
+                        cuisineSelected={props.cuisineSelected}/>
     }
 
 

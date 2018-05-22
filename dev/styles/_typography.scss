@@ -1,3 +1,37 @@
 h1, h2, h3, p {
     margin: 0;
 }
+h1, h2 {
+    font-family: 'Permanent Marker', cursive;
+}
+h3, p, a, li {
+    font-family: 'Roboto', sans-serif;
+}
+// Title 4 rem
+h1 {
+    font-size: 2rem;
+    @media screen and (max-width: 900px) {
+    font-size: 3rem;
+  }
+}
+
+h2 {
+    font-size: 2.3rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+p, li {
+    font-size: 1rem;
+}
+// p {
+//     font-size: 1.3rem;
+// }
+
+
+body {
+    color: #4b5057;
+    font-size: 62.5%;
+}

@@ -1,17 +1,24 @@
 import React from 'react'
 
 const BeerBlerb= (props) => {
-    const fullBlerb = props.beer.tasting_note;
+    let fullBlerb = '';
     let shortBlerb = '';
     
-    if(fullBlerb !== undefined){
-        shortBlerb = fullBlerb.substring(0, 200);
+    if (props.beer.tasting_note !== undefined){
+        fullBlerb = props.beer.tasting_note;
+        shortBlerb = fullBlerb.substring(0, 120);
         console.log(shortBlerb)
     }
 
     return (
-        <p>{shortBlerb}...</p>
-    )
+        <div>
+            {shortBlerb ? (
+            <p>{shortBlerb}...</p>
+            ) : (
+                null
+            )}
+        </div>   
+        )
 }
 
 export default BeerBlerb

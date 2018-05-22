@@ -4,9 +4,12 @@ import SelectInput from './select_input'
 const IntroBox = (props) => {
     return (
         <div className='introBox'>
-            <h1>INTROBOX</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quas nobis ipsa incidunt nesciunt tempore cum, fugiat hic accusantium assumenda? Aliquid perspiciatis asperiores expedita nihil architecto eos labore quas cupiditate!</p>
-            <SelectInput cuisineList={props} setStateCuisine={props.setStateCuisine}/>
+            <div className='introText'>
+                <h2>Choose your Cuisine</h2>
+                <p>Select the type of cuisine you'd like to order and we'll provide you with the best corresponding takeout restaurants in the city</p>
+                <p>We'll also provide you with a list of the LCBO beers that match your selection.</p>
+                <SelectInput cuisineList={props} setStateCuisine={props.setStateCuisine}/>
+            </div>
         </div>
     )
 }
