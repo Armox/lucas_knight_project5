@@ -36,7 +36,8 @@ class ResultsBox extends React.Component {
                 countryName = country.lcbo
             }
         });
-        axios.get('https://lcboapi.com/products?access_key=MDowZTRkM2RjYy0yZDZmLTExZTgtOWE5ZC1iMzZjYmI4MWYzOWE6YzlOMEFQdzF3TTFFSjZsWFA5ejd3Tzg5bzc1Rnd4Z0E0UWhN', {
+        axios.get('https://lcboapi.com/products?access_key=MDoyZGM5ZTRmYS01ZGU2LTExZTgtYWExMi04ZjVhZGIwNGY0YWI6TUtkcDZpNnE3N0dDSWJBTjBkeTZhdThpVmhLQmtickh3V0hq', {
+            
             params: {
                 // access_key: 'MDowZTRkM2RjYy0yZDZmLTExZTgtOWE5ZC1iMzZjYmI4MWYzOWE6YzlOMEFQdzF3TTFFSjZsWFA5ejd3Tzg5bzc1Rnd4Z0E0UWhN',
                 q: `beer+${countryName}`,
