@@ -1,11 +1,10 @@
 import React from 'react'
 
 const BeerBlerb= (props) => {
-    let fullBlerb = '';
+    let fullBlerb = props.beer.tasting_note;
     let shortBlerb = '';
     
-    if (props.beer.tasting_note !== undefined){
-        fullBlerb = props.beer.tasting_note;
+    if (fullBlerb){
         shortBlerb = fullBlerb.substring(0, 120);
         console.log(shortBlerb)
     }

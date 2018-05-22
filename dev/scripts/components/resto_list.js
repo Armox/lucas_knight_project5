@@ -8,10 +8,10 @@ const RestoList = (props) => {
     
     return (
         <ul>
-            <li>{ratingObj ? ratingObj.aggregate_rating : null}</li>
-            <li>{price_range}</li>
+            <li>Rating: {ratingObj ? ratingObj.aggregate_rating : null}</li>
+            <li>Price range: {price_range} / 5</li>
             <li><a href={menu_url}>Menu</a></li>
-            <li>delivering: {is_delivering_now === 0 ? 'Currently' : 'Closed'}</li>
+            <li>Delivery: {is_delivering_now === 0 ? 'Currently Delivering' : 'Closed'}</li>
             <li>{locationObj ? locationObj.address : null}</li>
         </ul>
 
