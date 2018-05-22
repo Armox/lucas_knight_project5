@@ -40,7 +40,7 @@ class ResultsBox extends React.Component {
             params: {
                 access_key: 'MDowZTRkM2RjYy0yZDZmLTExZTgtOWE5ZC1iMzZjYmI4MWYzOWE6YzlOMEFQdzF3TTFFSjZsWFA5ejd3Tzg5bzc1Rnd4Z0E0UWhN',
                 q: `beer+${countryName}`,
-                dataType: 'jsonp'
+                dataType: 'application/javascript'
             }
         })
         .then((res) => {
