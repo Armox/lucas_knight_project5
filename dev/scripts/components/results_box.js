@@ -36,7 +36,7 @@ class ResultsBox extends React.Component {
                 countryName = country.lcbo
             }
         });
-        axios.get('http://lcboapi.com/products', {
+        axios.get('https://lcboapi.com/products', {
             params: {
                 access_key: 'MDowZTRkM2RjYy0yZDZmLTExZTgtOWE5ZC1iMzZjYmI4MWYzOWE6YzlOMEFQdzF3TTFFSjZsWFA5ejd3Tzg5bzc1Rnd4Z0E0UWhN',
                 q: `beer+${countryName}`,
